@@ -10,7 +10,7 @@ Author URI: https://londonparkour.com
 
 function filter_email_headers( $headers, $email, $form, $fields ) {
 
-	$headers[] = 'Cc: andy@londonparkour.com';
+    $headers[] = 'Reply-To: '.$fields[2]['value'];
     
     return $headers;
 }
