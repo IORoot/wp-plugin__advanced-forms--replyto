@@ -10,6 +10,7 @@ Author URI: https://londonparkour.com
 
 function filter_email_headers( $headers, $email, $form, $fields ) {
 
+    // Add new header from the 'email' field.
     $headers[] = 'Reply-To: '.$fields[2]['value'];
     
     return $headers;
